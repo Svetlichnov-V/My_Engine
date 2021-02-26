@@ -148,7 +148,9 @@
     <ClCompile Include="Application_Cycle.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Buns.h" />
     <ClInclude Include="Game_Object.h" />
+    <ClInclude Include="Renderer.h" />
     <ClInclude Include="Storage.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
