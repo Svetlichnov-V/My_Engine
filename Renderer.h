@@ -1,5 +1,4 @@
 #pragma once
-#include "Game_Object.h"
 #include "SFML/Graphics.hpp"
 #include <cassert>
 #include <string>
@@ -7,6 +6,7 @@
 #include "Buns.h"
 
 
+/*
 class StorageImagesForOneAnimation
 {
 	std::string nameAnimation;
@@ -215,4 +215,10 @@ public:
 	{
 		return sprite;
 	}
+};
+*/
+
+class Renderer : public Component {
+public:
+	int sprite;
 };
