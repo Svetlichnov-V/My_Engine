@@ -7,6 +7,11 @@
 class Collider : public Component 
 {
 public:
+    Collider()
+    {
+        std::cout << "Collider" << '\n';
+        geometry = 9;
+    }
     int geometry;
 };
 

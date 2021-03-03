@@ -11,26 +11,28 @@ class GameObject
 
 public:
     template <typename T>
-    T* GetComponent(std::string key)
+    T* GetComponent()
     {
-        Component* component = components[key];
-        if (typeid(*component) != T)
-            assert();
-        static_cast<T*>(component);
+        //Component* component = components[key];
+        //if (typeid(*component) != typeid(T))
+        //    assert();
+        //static_cast<T*>(component);
         // static cast
 
         // typeid()
-
-        return component;
+        std::cout << "GetComponent" << '\n';
+        return static_cast<T*>(components[typeid(T).name()]);
     };
 
-    template <typename T>
-    void AddComponent(std::string key, T component)
+    template <class T>
+    void AddComponent(T component)
     {
+        std::cout << "AddComponent" << '\n';
         T* comp = new T();
         *comp = component;
         Component* c = comp;
-        components.insert({ key, c });
+        components[typeid(T).name()] = c;
+        //(*components[typeid(T).name()]) = component;
     };
 
     //RemoveComponent
