@@ -146,13 +146,16 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Application_Cycle.cpp" />
+    <ClCompile Include="Vector2f.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Buns.h" />
     <ClInclude Include="Collider.h" />
     <ClInclude Include="Game_Object.h" />
+    <ClInclude Include="Logic.h" />
     <ClInclude Include="Renderer.h" />
     <ClInclude Include="Storage.h" />
+    <ClInclude Include="Vector2f.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

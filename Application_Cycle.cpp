@@ -13,10 +13,14 @@ int main()
 
     Renderer rend;
     rend.sprite = 10;
-    Collider coll;
+    std::vector<Vector2f> vertexs = { {10, 5}, {5, 10} };
+    Collider coll(vertexs);
 
     obj.AddComponent<Renderer>(rend);
     obj.AddComponent<Collider>(coll);
 
-    graphics(obj);
+    Collider* c = obj.GetComponent<Collider>();
+    c->printVert();
+    //graphics(obj);
+
 }

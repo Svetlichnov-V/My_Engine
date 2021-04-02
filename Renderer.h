@@ -222,21 +222,23 @@ class Renderer : public Component {
 public:
 	Renderer()
 	{
-		std::cout << "Renderer" << '\n';
+		//std::cout << "Renderer" << '\n';
 		sprite = 9;
 	}
-
+	/*
 	Renderer(Renderer& r)
 	{
-		std::cout << "copyRenderer" << '\n';
+		//std::cout << "copyRenderer" << '\n';
 		sprite = r.sprite;
 	}
-
+	*/
+	/*
 	Renderer& operator = (Renderer& r)
 	{
-		std::cout << "=Renderer" << '\n';
+		//std::cout << "=Renderer" << '\n';
 		sprite = r.sprite;
 		return *this;
 	}
+	*/
 	int sprite;
 };
