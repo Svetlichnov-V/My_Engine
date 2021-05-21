@@ -57,5 +57,9 @@ public:
         }
     }
 
+    Vector2f getPosition()
+    {
+        return position;
+    }
     //RemoveComponent
 };

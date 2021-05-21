@@ -6,7 +6,6 @@
 #include "Buns.h"
 
 
-/*
 class StorageImagesForOneAnimation
 {
 	std::string nameAnimation;
@@ -216,8 +215,8 @@ public:
 		return sprite;
 	}
 };
-*/
 
+/*
 class Renderer : public Component {
 public:
 	Renderer()
@@ -225,20 +224,20 @@ public:
 		//std::cout << "Renderer" << '\n';
 		sprite = 9;
 	}
-	/*
+
 	Renderer(Renderer& r)
 	{
 		//std::cout << "copyRenderer" << '\n';
 		sprite = r.sprite;
 	}
-	*/
-	/*
+
 	Renderer& operator = (Renderer& r)
 	{
 		//std::cout << "=Renderer" << '\n';
 		sprite = r.sprite;
 		return *this;
 	}
-	*/
+
 	int sprite;
 };
+*/
